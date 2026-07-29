@@ -1,0 +1,128 @@
+/* Configurações Gerais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #fdf0f4;
+    color: #4a3e3d;
+    line-height: 1.6;
+}
+
+/* Cabeçalho */
+header {
+    background: linear-gradient(135deg, #ff85a2, #ffacb7);
+    color: white;
+    text-align: center;
+    padding: 2.5rem 1rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+/* Layout */
+.container {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+/* Cards dos Posts e Comentários */
+.card {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 12px;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 4px 15px rgba(255, 133, 162, 0.15);
+}
+
+.tag {
+    background-color: #ffe3e8;
+    color: #d81b60;
+    padding: 0.2rem 0.6rem;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.card h2 {
+    color: #c2185b;
+    margin: 0.5rem 0;
+}
+
+.data {
+    font-size: 0.85rem;
+    color: #888;
+    margin-bottom: 1rem;
+}
+
+/* Botões */
+button {
+    background-color: #ff4081;
+    color: white;
+    border: none;
+    padding: 0.6rem 1.2rem;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background-color: #c2185b;
+}
+
+.btn-curtir {
+    background-color: #ffe3e8;
+    color: #d81b60;
+    margin-top: 1rem;
+}
+
+.btn-curtir:hover {
+    background-color: #ffb6c1;
+}
+
+/* Formulário de Comentários */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    margin-top: 1rem;
+}
+
+input, textarea {
+    padding: 0.8rem;
+    border: 1px solid #ffd1dc;
+    border-radius: 8px;
+    outline: none;
+}
+
+input:focus, textarea:focus {
+    border-color: #ff4081;
+}
+
+/* Lista de Comentários */
+#lista-comentarios {
+    margin-top: 2rem;
+    border-top: 1px solid #ffe3e8;
+    padding-top: 1rem;
+}
+
+.comentario-item {
+    background-color: #fff9fa;
+    border-left: 4px solid #ff85a2;
+    padding: 0.8rem;
+    margin-top: 0.8rem;
+    border-radius: 0 8px 8px 0;
+}
+
+.comentario-item strong {
+    color: #c2185b;
+}
